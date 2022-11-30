@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="DonutPattern" translatesAutoresizingMaskIntoConstraints="NO" id="h8b-Bu-7aG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-kR-CN2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="Black"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The     BirthDays" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFl-DF-qHD">
+                                <rect key="frame" x="84" y="321" width="246" height="154"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="48"/>
+                                <color key="textColor" name="Yellow"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fKO-kR-CN2" secondAttribute="trailing" id="4C9-Qu-qiG"/>
+                            <constraint firstItem="h8b-Bu-7aG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9fb-QL-4ol"/>
+                            <constraint firstItem="IFl-DF-qHD" firstAttribute="centerX" secondItem="fKO-kR-CN2" secondAttribute="centerX" id="AGK-Se-v1W"/>
+                            <constraint firstItem="h8b-Bu-7aG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="F8t-aq-NfS"/>
+                            <constraint firstAttribute="bottom" secondItem="fKO-kR-CN2" secondAttribute="bottom" id="LYR-93-w6T"/>
+                            <constraint firstItem="fKO-kR-CN2" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ZLF-8R-fle"/>
+                            <constraint firstItem="IFl-DF-qHD" firstAttribute="centerY" secondItem="fKO-kR-CN2" secondAttribute="centerY" constant="-50" id="gEh-MW-kzB"/>
+                            <constraint firstAttribute="bottom" secondItem="h8b-Bu-7aG" secondAttribute="bottom" id="i4c-7R-lpc"/>
+                            <constraint firstItem="h8b-Bu-7aG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wpb-sW-Dtu"/>
+                            <constraint firstItem="fKO-kR-CN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zUE-zW-cWD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DonutPattern" width="390" height="844"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="0.97299998998641968" green="0.85900002717971802" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

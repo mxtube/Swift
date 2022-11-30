@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B55F574827F3A2F900216BCF /* BirthDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F574727F3A2F900216BCF /* BirthDayCell.swift */; };
+		B55F574A27F4F19400216BCF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F574927F4F19400216BCF /* CustomTextField.swift */; };
+		B55F575627F59F2E00216BCF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F575527F59F2E00216BCF /* Person.swift */; };
+		B57352DD27E12E19004E3AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57352DC27E12E19004E3AE6 /* AppDelegate.swift */; };
+		B57352DF27E12E19004E3AE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57352DE27E12E19004E3AE6 /* SceneDelegate.swift */; };
+		B57352E127E12E19004E3AE6 /* BirthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57352E027E12E19004E3AE6 /* BirthDay.swift */; };
+		B57352E427E12E19004E3AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57352E227E12E19004E3AE6 /* Main.storyboard */; };
+		B57352E627E12E1E004E3AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57352E527E12E1E004E3AE6 /* Assets.xcassets */; };
+		B57352E927E12E1E004E3AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57352E727E12E1E004E3AE6 /* LaunchScreen.storyboard */; };
+		B57352F327E259FA004E3AE6 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57352F227E259FA004E3AE6 /* CustomView.swift */; };
+		B5B3357927F6099300F53A84 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B5B3357827F6099300F53A84 /* Realm */; };
+		B5B3357B27F6099300F53A84 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B5B3357A27F6099300F53A84 /* RealmSwift */; };
+		B5DDE42C28114CC700D261CE /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B5DDE42B28114CC700D261CE /* IQKeyboardManagerSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B55F574727F3A2F900216BCF /* BirthDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayCell.swift; sourceTree = "<group>"; };
+		B55F574927F4F19400216BCF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B55F575527F59F2E00216BCF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B57352D927E12E19004E3AE6 /* BirthDays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthDays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57352DC27E12E19004E3AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B57352DE27E12E19004E3AE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B57352E027E12E19004E3AE6 /* BirthDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDay.swift; sourceTree = "<group>"; };
+		B57352E327E12E19004E3AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B57352E527E12E1E004E3AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57352E827E12E1E004E3AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B57352EA27E12E1E004E3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57352F227E259FA004E3AE6 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B57352D627E12E19004E3AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B3357B27F6099300F53A84 /* RealmSwift in Frameworks */,
+				B5B3357927F6099300F53A84 /* Realm in Frameworks */,
+				B5DDE42C28114CC700D261CE /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B55F574C27F59EB200216BCF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B55F574F27F59EC200216BCF /* Model */,
+				B55F574E27F59EBE00216BCF /* View */,
+				B55F574D27F59EB900216BCF /* Controller */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B55F574D27F59EB900216BCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B57352DC27E12E19004E3AE6 /* AppDelegate.swift */,
+				B57352DE27E12E19004E3AE6 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B55F574E27F59EBE00216BCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B57352E727E12E1E004E3AE6 /* LaunchScreen.storyboard */,
+				B55F574927F4F19400216BCF /* CustomTextField.swift */,
+				B57352F227E259FA004E3AE6 /* CustomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B55F574F27F59EC200216BCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B55F575027F59ED100216BCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57352E527E12E1E004E3AE6 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B55F575127F59EF400216BCF /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				B55F575427F59F0C00216BCF /* Model */,
+				B55F575327F59F0900216BCF /* View */,
+				B55F575227F59F0300216BCF /* Controller */,
+			);
+			path = Birthday;
+			sourceTree = "<group>";
+		};
+		B55F575227F59F0300216BCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B57352E027E12E19004E3AE6 /* BirthDay.swift */,
+				B55F574727F3A2F900216BCF /* BirthDayCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B55F575327F59F0900216BCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B57352E227E12E19004E3AE6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B55F575427F59F0C00216BCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B55F575527F59F2E00216BCF /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B57352D027E12E19004E3AE6 = {
+			isa = PBXGroup;
+			children = (
+				B57352DB27E12E19004E3AE6 /* BirthDays */,
+				B57352DA27E12E19004E3AE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B57352DA27E12E19004E3AE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57352D927E12E19004E3AE6 /* BirthDays.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57352DB27E12E19004E3AE6 /* BirthDays */ = {
+			isa = PBXGroup;
+			children = (
+				B55F574C27F59EB200216BCF /* Application */,
+				B55F575127F59EF400216BCF /* Birthday */,
+				B55F575027F59ED100216BCF /* Supporting Files */,
+				B57352EA27E12E1E004E3AE6 /* Info.plist */,
+			);
+			path = BirthDays;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B57352D827E12E19004E3AE6 /* BirthDays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57352ED27E12E1E004E3AE6 /* Build configuration list for PBXNativeTarget "BirthDays" */;
+			buildPhases = (
+				B57352D527E12E19004E3AE6 /* Sources */,
+				B57352D627E12E19004E3AE6 /* Frameworks */,
+				B57352D727E12E19004E3AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirthDays;
+			packageProductDependencies = (
+				B5B3357827F6099300F53A84 /* Realm */,
+				B5B3357A27F6099300F53A84 /* RealmSwift */,
+				B5DDE42B28114CC700D261CE /* IQKeyboardManagerSwift */,
+			);
+			productName = BirthDays;
+			productReference = B57352D927E12E19004E3AE6 /* BirthDays.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B57352D127E12E19004E3AE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B57352D827E12E19004E3AE6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B57352D427E12E19004E3AE6 /* Build configuration list for PBXProject "BirthDays" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B57352D027E12E19004E3AE6;
+			packageReferences = (
+				B5B3357727F6099300F53A84 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				B5DDE42A28114CC700D261CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = B57352DA27E12E19004E3AE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B57352D827E12E19004E3AE6 /* BirthDays */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B57352D727E12E19004E3AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57352E927E12E1E004E3AE6 /* LaunchScreen.storyboard in Resources */,
+				B57352E627E12E1E004E3AE6 /* Assets.xcassets in Resources */,
+				B57352E427E12E19004E3AE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B57352D527E12E19004E3AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55F574A27F4F19400216BCF /* CustomTextField.swift in Sources */,
+				B55F574827F3A2F900216BCF /* BirthDayCell.swift in Sources */,
+				B57352F327E259FA004E3AE6 /* CustomView.swift in Sources */,
+				B57352E127E12E19004E3AE6 /* BirthDay.swift in Sources */,
+				B55F575627F59F2E00216BCF /* Person.swift in Sources */,
+				B57352DD27E12E19004E3AE6 /* AppDelegate.swift in Sources */,
+				B57352DF27E12E19004E3AE6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B57352E227E12E19004E3AE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57352E327E12E19004E3AE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B57352E727E12E1E004E3AE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57352E827E12E1E004E3AE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B57352EB27E12E1E004E3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B57352EC27E12E1E004E3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B57352EE27E12E1E004E3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R66HPVWV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BirthDays/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TheBirthDays;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.kuznetsovka.BirthDays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B57352EF27E12E1E004E3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R66HPVWV57;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BirthDays/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TheBirthDays;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.kuznetsovka.BirthDays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B57352D427E12E19004E3AE6 /* Build configuration list for PBXProject "BirthDays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57352EB27E12E1E004E3AE6 /* Debug */,
+				B57352EC27E12E1E004E3AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57352ED27E12E1E004E3AE6 /* Build configuration list for PBXNativeTarget "BirthDays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57352EE27E12E1E004E3AE6 /* Debug */,
+				B57352EF27E12E1E004E3AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5B3357727F6099300F53A84 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B5DDE42A28114CC700D261CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5B3357827F6099300F53A84 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B3357727F6099300F53A84 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		B5B3357A27F6099300F53A84 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B3357727F6099300F53A84 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		B5DDE42B28114CC700D261CE /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5DDE42A28114CC700D261CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B57352D127E12E19004E3AE6 /* Project object */;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Alegreya-Medium.ttf">
+            <string>Alegreya-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тут будет регистрация" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-aw-bLF">
+                                <rect key="frame" x="124" y="412" width="166" height="82"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="30"/>
+                                <color key="textColor" name="LabelTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-Te-Ytg">
+                                <rect key="frame" x="27" y="772" width="360" height="40"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Назад">
+                                    <color key="titleColor" name="RoundedButtonText"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DJV-Vx-7sw" kind="show" id="Twy-V6-JQX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="ViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JnN-Te-Ytg" secondAttribute="trailing" constant="27" id="7W1-Cy-rzZ"/>
+                            <constraint firstItem="wQH-aw-bLF" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="ATq-P4-FNk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JnN-Te-Ytg" secondAttribute="bottom" constant="50" id="BM5-xA-6aR"/>
+                            <constraint firstItem="wQH-aw-bLF" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="dWm-er-wbs"/>
+                            <constraint firstItem="JnN-Te-Ytg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="rfh-iL-2XE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="82"/>
+        </scene>
+        <!--OnBoarding-->
+        <scene sceneID="lWF-o2-h5w">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OnBoarding" id="DJV-Vx-7sw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Pxm-c3-GkO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Py9-Wt-CHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="LabelTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RoundedButtonText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBackgroundColor">
+            <color red="0.14499999582767487" green="0.20000000298023224" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

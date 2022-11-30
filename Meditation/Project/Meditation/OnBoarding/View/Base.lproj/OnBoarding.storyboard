@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Alegreya-Bold.ttf">
+            <string>Alegreya-Bold</string>
+        </array>
+        <array key="Alegreya-Medium.ttf">
+            <string>Alegreya-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On Boarding-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="OnBoarding" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnBoarding" customModule="Meditation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash Screen" translatesAutoresizingMaskIntoConstraints="NO" id="epS-Ks-8r3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logotype" translatesAutoresizingMaskIntoConstraints="NO" id="Cb1-lW-92E">
+                                <rect key="frame" x="82" y="178" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="BHm-dO-OOg"/>
+                                    <constraint firstAttribute="width" constant="250" id="afR-1F-971"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРИВЕТ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-Cd-Zd7">
+                                <rect key="frame" x="141.5" y="430" width="131" height="46.5"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Bold" family="Alegreya" pointSize="34"/>
+                                <color key="textColor" name="LabelTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4u-Eh-ljN">
+                                <rect key="frame" x="86.5" y="486.5" width="241.5" height="82"/>
+                                <string key="text">Наслаждайся отборочными Будь внимателен
+Делай хорошо</string>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="20"/>
+                                <color key="textColor" name="LabelTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cId-nd-Q33" customClass="RoundedButton" customModule="Meditation" customModuleProvider="target">
+                                <rect key="frame" x="27" y="691" width="360" height="61"/>
+                                <color key="backgroundColor" name="RoundedButtonBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="X6O-49-3BG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Войти в аккаунт">
+                                    <color key="titleColor" name="RoundedButtonText"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ico-UM-qdI" kind="show" id="aPG-LX-zaH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxQ-vP-Xly">
+                                <rect key="frame" x="27" y="772" width="360" height="40"/>
+                                <fontDescription key="fontDescription" name="Alegreya-Medium" family="Alegreya" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Еще нет аккаунта? Зарегистрируйтесь">
+                                    <color key="titleColor" name="TextButtonTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AIj-EU-J5d" kind="show" id="CMW-U5-OOs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jxQ-vP-Xly" secondAttribute="bottom" constant="50" id="0L2-uX-L3D"/>
+                            <constraint firstItem="O3R-Cd-Zd7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="32c-It-s2E"/>
+                            <constraint firstItem="epS-Ks-8r3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cad-wD-jcj"/>
+                            <constraint firstItem="jxQ-vP-Xly" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="G1b-8e-jrb"/>
+                            <constraint firstItem="O4u-Eh-ljN" firstAttribute="top" secondItem="O3R-Cd-Zd7" secondAttribute="bottom" constant="10" id="Jcw-L3-5Iu"/>
+                            <constraint firstItem="jxQ-vP-Xly" firstAttribute="top" secondItem="cId-nd-Q33" secondAttribute="bottom" constant="20" id="P8V-B4-sCV"/>
+                            <constraint firstItem="O3R-Cd-Zd7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UDM-jg-z5N"/>
+                            <constraint firstItem="Cb1-lW-92E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WcB-qi-6JL"/>
+                            <constraint firstItem="cId-nd-Q33" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="cQz-g2-tii"/>
+                            <constraint firstAttribute="bottom" secondItem="epS-Ks-8r3" secondAttribute="bottom" id="id0-Uf-J2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jxQ-vP-Xly" secondAttribute="trailing" constant="27" id="nSb-1S-DDh"/>
+                            <constraint firstItem="epS-Ks-8r3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qTm-Nz-55L"/>
+                            <constraint firstItem="cId-nd-Q33" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tDc-Nz-VRF"/>
+                            <constraint firstItem="Cb1-lW-92E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-150" id="vKl-tC-MKT"/>
+                            <constraint firstItem="O4u-Eh-ljN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wNs-zk-9dL"/>
+                            <constraint firstItem="epS-Ks-8r3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wU5-ee-JsW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cId-nd-Q33" secondAttribute="trailing" constant="27" id="yHM-Gx-alH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="ltz-kZ-ZcU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="Ico-UM-qdI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0xl-qS-1TX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojw-Tg-mav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="-13"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="wo8-Qo-oa0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="AIj-EU-J5d" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oKf-30-g5t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc2-uq-EUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="157"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="cId-nd-Q33">
+            <size key="intrinsicContentSize" width="177" height="47"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Logotype" width="191" height="199"/>
+        <image name="Splash Screen" width="375" height="812"/>
+        <namedColor name="LabelTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RoundedButtonBackground">
+            <color red="0.48600000143051147" green="0.60399997234344482" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RoundedButtonText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextButtonTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
